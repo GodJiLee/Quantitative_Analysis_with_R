@@ -99,7 +99,7 @@ KOR_ticker = merge(down_sector, down_ind,
 KOR_ticker = KOR_ticker[order(-KOR_ticker['시가총액.원.']), ]
 print(head(KOR_ticker))
 
-KOR_ticker[grepl('스팩', KOR_ticker[, '종목명']), '종목명'] 
+KOR_ticker[grepl('스팩', KOR_ticker[, '종목명']), '종목명']  
 
 KOR_ticker[str_sub(KOR_ticker[, '종목코드'], -1, -1) != 0, '종목명']
 
